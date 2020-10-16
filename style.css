@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgb(49, 75, 78), rgb(1, 4, 20));
+  font-family: sans-serif;
+  color: white;
+}
+
+.country-name{
+    height: 30vh;
+   
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+}
+.Confirmed  {
+ 
+  font-size: 2rem;
+ 
+
+}
+.Deaths{
+    color: red;
+}
+
+
+
+ span {
+ margin-left: 8px;
+  font-size: 2rem;
+}
+

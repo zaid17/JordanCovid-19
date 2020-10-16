@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jordan covid-19</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <style>
+      body,
+      html {
+        height: fit-content;
+      }
+      body {
+        background-color: rgba(0, 0, 0, 0.959);
+        color: aliceblue;
+        height: auto;
+        display: list-item;
+        scroll-behavior: smooth;
+        height: 100%;
+      }
+      hr.new1 {
+        height: 12px;
+        border: 0;
+        box-shadow: inset 0 12px 12px -12px rgba(255, 255, 255, 0.616);
+      }
+      .chart-container {
+        position: relative;
+        height: 80vh;
+        width: 80vw;
+        margin: auto;
+        padding-top: 3rem;
+        font-size: medium;
+        padding-bottom: 9vh;
+      }
+      .alert-secondary {
+        background-color: rgba(255, 255, 255, 0.616);
+        color: cornsilk;
+      }
+      p {
+        font-size: larger;
+      }
+      footer {
+        bottom: 0px;
+        margin-top: 0;
+        left: 0;
+        padding: 10px;
+        width: 100%;
+        background-color: rgba(12, 11, 11, 0.52);
+        color: white;
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        margin-top: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="country-name navbar-nav">
+        <h2>COVID-19 in Jordan</h2>
+      </div>
+    </div>
+
+    <div class="chart-container">
+      <p style="text-align: center"></p>
+      <hr class="new1" />
+      <canvas id="Jordan"></canvas>
+    </div>
+
+    <div class="chart-container">
+      <p style="text-align: center"></p>
+      <hr class="new1" />
+      <canvas id="Jordan2"></canvas>
+      <p
+        style="text-align: center; margin: auto; color: gray; font-size: small"
+      >
+        days
+      </p>
+    </div>
+
+    <hr class="new1" />
+    <div class="chart-container">
+      <p style="text-align: center">Middle east COVID-19 confirmed cases</p>
+
+      <canvas id="ArabCoun"></canvas>
+    </div>
+    <div
+      class=""
+      style="font-size: 3vw; text-align: center; width: auto; margin: auto"
+    >
+      <hr class="new1" />
+    </div>
+
+    <div class="chart-container">
+      <p style="text-align: center">Europ east COVID-19 confirmed cases</p>
+
+      <canvas id="Europ"></canvas>
+    </div>
+    <hr class="new1" />
+    <div
+      class=""
+      style="font-size: 3vw; text-align: center; width: auto; margin: auto"
+    ></div>
+
+    <div class="chart-container">
+      <p style="text-align: center">US vs Middle east vs Europ</p>
+
+      <canvas id="All"></canvas>
+    </div>
+
+    <!-- <div class="Confirmed alert alert-dismissible alert-warning">
+          
+      </div>
+      <div class="Deaths alert alert-dismissible alert-danger"></div>
+      <div class="Recovered alert alert-dismissible alert-success"></div>
+ -->
+    <hr class="new1" />
+    <footer>
+      developed by Zaid Alsaid &copy;2020
+      <p style="font-size: small">e-mail: zaidalsaid11@gmail.com</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
